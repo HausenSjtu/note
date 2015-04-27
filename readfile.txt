@@ -1,0 +1,33 @@
+python
+
+read:
+f = file('out.txt')
+data = f.read()
+f.readlines()
+print data
+f.close()
+
+write:
+data = 'I will be in a file.\nSo cool!'
+out = open('output.txt', 'w')
+out.write(data)
+out.writeline(data)
+out.close()
+
+
+
+
+
+matlab
+
+read:
+fin = fopen('out.txt')
+[b count ]=fscanf(fin,'%d',10000);
+fclose(fin);
+b = reshape(b,100,100);
+
+write:
+fout = fopen('out.txt','w');
+fprintf(fout,'%d\n',a);
+fclose(fout);
+
