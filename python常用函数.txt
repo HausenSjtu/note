@@ -1,0 +1,53 @@
+import time 
+time.clock：
+在第一次调用的时候，返回的是程序运行的实际时间；以第二次之后的调用，返回的是自第一次调用后,到这次调用的时间间隔
+time(...)
+strptime(...)%Y-%m-%d %H:%M:%S
+strftime(...)
+
+
+
+
+
+
+
+import urllib2
+web = urllib2.urlopen('https://yande.re/post?page=3&tags=wallpaper')
+content = web.read()
+urllib.urlretrieve(pic, 'first.jpg')		##保存图片
+
+
+
+
+
+
+import re
+text = "Hi, I am Shirley Hilton. I am his wife."
+m = re.findall(r"hi", text)
+patternString=r'http://.{0,50}\.jpg'		##匹配.
+
+http://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html
+常用正则表达式：
+.   除\n外的字符
+[]	[^ab]	对应位置是[]中内容
+a='zhsth_uy_zhshe'
+b = re.findall(r'.*_(?!sa).*_.*',a)
+
+
+
+
+import os
+print os.getcwd()		##获取当前路径
+
+
+
+
+
+
+
+
+
+
+
+z='hi,ni hao'
+print z.replace('ni','zhs')
