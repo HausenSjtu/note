@@ -18,6 +18,9 @@ urllib.urlretrieve(pic, 'first.jpg')		##±£´æÍ¼Æ¬
 
 
 
+³¬Ê±£ºhttp://blog.csdn.net/waterforest_pang/article/details/16885259
+
+
 
 
 
