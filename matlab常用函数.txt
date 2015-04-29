@@ -1,0 +1,65 @@
+dec2bin()			十进制转二进制								
+bitxor(1,2)＝3		先转二进制，再按位异或，再转回十进制 		
+str2num()			char转数字
+hex2dec				16进制转10进制	
+base2dec('11',16)	任意进制转10进制
+
+all()				矩阵中所有元素均为1时返回1
+any()				矩阵中有元素为1时返回1	
+polyfit(x,y,6)		多项式拟合散点，第三项为多项式的最高次数，返回值为从左到右表示从高次到低次的多项式系数
+y = polyval(p,x)	p=[p0 p1 p2…pn]    y=pn+pn-1*x+…p0*x^n
+combntns(set,sub)	在集合set中取sub个元素的所有组合     
+nchoosek(n,m)		组合数值
+setdiff(x,y)		集合相减
+diff(x)				计算差分
+[J,T] = histeq(I)	图像灰度均衡化，J是均衡化之后的图像，T是均衡化之后的灰度直方图
+T=imhist(I)			得到图像的灰度直方图
+
+save mydata A B 	把A B矩阵数据保存在mydata.dat文件中了
+save mydata3 回车	把所有都保存
+load mydata			读取.mat数据
+[x,y]=ginput(n)		得到点击的图中的点的坐标
+xlabel('x')			给横坐标标注
+title('myName')		加title
+legend('a曲线','')	给不同曲线加名字
+input('输入点A的横坐标：')
+str=sprintf('参数个数为%d个。',y);	disp(str); 
+text(0.5,0.7,'some words')
+
+
+
+graythresh(gray)
+im2bw(gray,tt)		图像二值化
+unique(A,'rows')	搜索用来去除矩阵A中重复的行
+corrcoef(X,Y)   	返回列向量X,Y的相关系数
+
+
+strcmp(x,y)			比较两个字符是否相同
+cell2mat()			将cell型转换为字符
+[NUM,TXT,RAW]=xlsread(excelName,sheetNum)
+isnan
+
+
+load test.txt
+ex=importdata('example.txt')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
