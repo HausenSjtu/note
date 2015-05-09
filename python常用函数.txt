@@ -54,3 +54,7 @@ print os.getcwd()		##获取当前路径
 
 z='hi,ni hao'
 print z.replace('ni','zhs')
+
+i,a in enumerate(l):
+
+diff = map(lambda x: x[0]-x[1], zip(points[1:lenOrigin], points[0:lenOrigin-1]))
