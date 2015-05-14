@@ -44,9 +44,9 @@ print os.getcwd()		##获取当前路径
 
 
 
-
-
-
+import linecache
+linecache.clearcache()
+linecache.getline('test.txt',1000)
 
 
 
@@ -61,3 +61,5 @@ diff = map(lambda x: x[0]-x[1], zip(points[1:lenOrigin], points[0:lenOrigin-1]))
 
 	
 import sys; sys.exit()
+
+
