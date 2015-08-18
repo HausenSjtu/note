@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 
-## 时间函数
-=======
+## 杂
 ret = [dic[i] for i in s]
 
 z='hi,ni hao'
@@ -13,10 +11,12 @@ i,a in enumerate(l):
 
 diff = map(lambda x: x[0]-x[1], zip(points[1:lenOrigin], points[0:lenOrigin-1]))
 
-  
+
+
+
+
+## 集合操作  
 集合支持一系列标准操作，包括并集、交集、差集和对称差集，例如：  
-  
-   
   
 a = t | s          # t 和 s的并集  
   
@@ -30,38 +30,21 @@ d = t ^ s          # 对称差集（项在t或s中，但不会同时出现在二者中）
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 随机采样
 from random import sample
 tmpCards = sample(range(52-length),extraNum)
 
 
 
->>>>>>> origin/master
+
+
+## 时间函数
 import time 
 time.clock：
 在第一次调用的时候，返回的是程序运行的实际时间；以第二次之后的调用，返回的是自第一次调用后,到这次调用的时间间隔
 time(...)
 strptime(...)%Y-%m-%d %H:%M:%S
 strftime(...)
-
 
 
 
@@ -74,8 +57,8 @@ content = web.read()
 urllib.urlretrieve(pic, 'first.jpg')		##保存图片
 
 
-
 超时：http://blog.csdn.net/waterforest_pang/article/details/16885259
+
 
 
 
@@ -95,6 +78,8 @@ b = re.findall(r'.*_(?!sa).*_.*',a)
 
 
 
+
+
 ## 获取当前路径
 import os
 print os.getcwd()		
@@ -107,20 +92,6 @@ linecache.getline('test.txt',1000)
 
 
 
-
-
-
-	
-import sys; sys.exit()
-
-<<<<<<< HEAD
-## 杂
-z='hi,ni hao'
-print z.replace('ni','zhs')
-
-i,a in enumerate(l):
-
-diff = map(lambda x: x[0]-x[1], zip(points[1:lenOrigin], points[0:lenOrigin-1]))
 
 
 ## 退出程序
@@ -136,6 +107,7 @@ list(itertools.combinations([1,2,3,4],2))
 
 
 
+
 ## 对字符串的修改等
 import array
 s='hello'
@@ -148,10 +120,3 @@ print a.tostring()
 print a.tolist()
 
 
-
-
-
-
-=======
-
->>>>>>> origin/master
