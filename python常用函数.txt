@@ -1,5 +1,60 @@
+<<<<<<< HEAD
 
 ## 时间函数
+=======
+ret = [dic[i] for i in s]
+
+z='hi,ni hao'
+print z.replace('ni','zhs')
+
+l.count(2)
+
+i,a in enumerate(l):
+
+diff = map(lambda x: x[0]-x[1], zip(points[1:lenOrigin], points[0:lenOrigin-1]))
+
+  
+集合支持一系列标准操作，包括并集、交集、差集和对称差集，例如：  
+  
+   
+  
+a = t | s          # t 和 s的并集  
+  
+b = t & s          # t 和 s的交集  
+  
+c = t – s          # 求差集（项在t中，但不在s中）  
+  
+d = t ^ s          # 对称差集（项在t或s中，但不会同时出现在二者中）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from random import sample
+tmpCards = sample(range(52-length),extraNum)
+
+
+
+>>>>>>> origin/master
 import time 
 time.clock：
 在第一次调用的时候，返回的是程序运行的实际时间；以第二次之后的调用，返回的是自第一次调用后,到这次调用的时间间隔
@@ -45,6 +100,9 @@ import os
 print os.getcwd()		
 
 
+import linecache
+linecache.clearcache()
+linecache.getline('test.txt',1000)
 
 
 
@@ -52,7 +110,10 @@ print os.getcwd()
 
 
 
+	
+import sys; sys.exit()
 
+<<<<<<< HEAD
 ## 杂
 z='hi,ni hao'
 print z.replace('ni','zhs')
@@ -91,3 +152,6 @@ print a.tolist()
 
 
 
+=======
+
+>>>>>>> origin/master
