@@ -1,3 +1,5 @@
+
+## 时间函数
 import time 
 time.clock：
 在第一次调用的时候，返回的是程序运行的实际时间；以第二次之后的调用，返回的是自第一次调用后,到这次调用的时间间隔
@@ -10,7 +12,7 @@ strftime(...)
 
 
 
-
+## 上网
 import urllib2
 web = urllib2.urlopen('https://yande.re/post?page=3&tags=wallpaper')
 content = web.read()
@@ -23,7 +25,7 @@ urllib.urlretrieve(pic, 'first.jpg')		##保存图片
 
 
 
-
+## 正则表达式
 import re
 text = "Hi, I am Shirley Hilton. I am his wife."
 m = re.findall(r"hi", text)
@@ -38,9 +40,9 @@ b = re.findall(r'.*_(?!sa).*_.*',a)
 
 
 
-
+## 获取当前路径
 import os
-print os.getcwd()		##获取当前路径
+print os.getcwd()		
 
 
 
@@ -51,7 +53,7 @@ print os.getcwd()		##获取当前路径
 
 
 
-
+## 杂
 z='hi,ni hao'
 print z.replace('ni','zhs')
 
@@ -59,5 +61,33 @@ i,a in enumerate(l):
 
 diff = map(lambda x: x[0]-x[1], zip(points[1:lenOrigin], points[0:lenOrigin-1]))
 
-	
+
+## 退出程序
 import sys; sys.exit()
+
+
+
+
+## 排列组合
+import itertools  
+list(itertools.permutations([1,2,3,4],2))
+list(itertools.combinations([1,2,3,4],2))  
+
+
+
+## 对字符串的修改等
+import array
+s='hello'
+a=array.array('c',s)
+a[0]='z'
+a.remove('o')
+a.insert(6,'k')
+print 'e' in a
+print a.tostring()
+print a.tolist()
+
+
+
+
+
+
