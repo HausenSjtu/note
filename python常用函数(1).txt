@@ -1,0 +1,178 @@
+## ASC码
+s='zhs'
+print ord(s[0])
+print ord('Z')
+print chr(60)
+print 'z'in s
+
+
+## 类
+class a():
+    la=[1,2]
+    def __init__(self):
+        self.b=10
+    def p(self):
+        print self.la
+其中 la类似于静态变量，为所有对象共有的。
+
+
+
+## 杂
+ret = [dic[i] for i in s]
+
+z='hi,ni hao'
+print z.replace('ni','zhs')
+
+l.count(2)
+
+i,a in enumerate(l):
+
+diff = map(lambda x: x[0]-x[1], zip(points[1:lenOrigin], points[0:lenOrigin-1]))
+
+# list的初始化
+t0 =time.time()
+l=[[0]*10000]*10000
+t1 = time.time()
+t=[[0 for i in range(10000)] for j in range(10000)]
+t2 = time.time()
+print t1-t0
+print t2-t1
+第一种方法要比第二种方法快很多
+但是第一种方法每个自list都是同一个对象
+
+
+##pygame
+# surface对象
+pygame.trasform.scale(surface,(width,height)) 来拉伸。(width,height) 是新尺寸。
+pygame.Surface.get_size	—	get the dimensions of the Surface
+pygame.Surface.get_width	—	get the width of the Surface
+pygame.Surface.get_height	—	get the height of the Surface
+#文字的处理
+my_font = pygame.font.SysFont("arial", 16)
+第一个参数是字体名，第二个自然就是大小
+name_surface = my_font.render(my_name, True, (0, 0, 0), (255, 255, 255))
+第一个参数是写的文字；第二个参数是个布尔值，以为这是否开启抗锯齿，就是说True的话字体会比较平滑，不过相应的速度有一点点影响；第三个参数是字体的颜色；第四个是背景色，如果你想没有背景色（也就是透明），那么可以不加这第四个参数。
+pygame.image.save(name_surface, "name.png")
+隐藏鼠标
+pygame.mouse.set_visible(False)
+
+
+
+## 集合操作  
+集合支持一系列标准操作，包括并集、交集、差集和对称差集，例如：  
+  
+a = t | s          # t 和 s的并集  
+  
+b = t & s          # t 和 s的交集  
+  
+c = t – s          # 求差集（项在t中，但不在s中）  
+  
+d = t ^ s          # 对称差集（项在t或s中，但不会同时出现在二者中）
+
+
+
+
+
+## 随机采样
+from random import sample
+tmpCards = sample(range(52-length),extraNum)
+
+
+
+
+
+## 时间函数
+import time 
+time.clock：
+在第一次调用的时候，返回的是程序运行的实际时间；以第二次之后的调用，返回的是自第一次调用后,到这次调用的时间间隔
+time(...)
+strptime(...)%Y-%m-%d %H:%M:%S
+strftime(...)
+
+
+
+
+
+## 上网
+import urllib2
+web = urllib2.urlopen('https://yande.re/post?page=3&tags=wallpaper')
+content = web.read()
+urllib.urlretrieve(pic, 'first.jpg')		##保存图片
+
+
+超时：http://blog.csdn.net/waterforest_pang/article/details/16885259
+
+
+
+
+
+## 正则表达式
+import re
+text = "Hi, I am Shirley Hilton. I am his wife."
+m = re.findall(r"hi", text)
+patternString=r'http://.{0,50}\.jpg'		##匹配.
+
+http://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html
+常用正则表达式：
+.   除\n外的字符
+[]	[^ab]	对应位置是[]中内容
+a='zhsth_uy_zhshe'
+b = re.findall(r'.*_(?!sa).*_.*',a)
+
+
+
+
+
+## 获取当前路径
+import os
+print os.getcwd()		
+
+
+
+## 直接读取文件的指定行内容
+import linecache
+linecache.clearcache()
+linecache.getline('test.txt',1000)
+
+
+
+
+
+
+## 退出程序
+import sys; sys.exit()
+
+
+
+
+## 排列组合
+import itertools  
+list(itertools.permutations([1,2,3,4],2))
+list(itertools.combinations([1,2,3,4],2))  
+
+
+
+
+## 对字符串的修改等
+import array
+s='hello'
+a=array.array('c',s)
+a[0]='z'
+a.remove('o')
+a.insert(6,'k')
+print 'e' in a
+print a.tostring()
+print a.tolist()
+
+
+
+## 异常处理
+import sys
+import traceback
+
+try:
+	pass
+except:
+	info=sys.exc_info()
+	print info[0],":",info[1]
+    traceback.print_exc(file=sys.stdout)
